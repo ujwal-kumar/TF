@@ -4,6 +4,10 @@ provider "aws" {
   region = "ap-south-1"
 }
 
+variable "aws_access_key"{}
+variable "aws_secret_key"{}
+variable "key_name"{}
+
 resource "aws_security_group" "allow_all" {
   name        = "aws_sg"
   description = "Allow all inbound traffic"
