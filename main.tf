@@ -41,7 +41,6 @@ resource "aws_instance" "test" {
   security_groups = ["aws_sg"]
 }
 
-
 output "aws_instance_public_dns" {
   value = "${aws_instance.test.public_dns}"
 }
